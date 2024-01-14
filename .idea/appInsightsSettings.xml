@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.stormx.notesync" />
+                  <option name="mobileSdkAppId" value="1:446015119169:android:fd93cd3398f566b9d98bc0" />
+                  <option name="projectId" value="note-sync-d6b68" />
+                  <option name="projectNumber" value="446015119169" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

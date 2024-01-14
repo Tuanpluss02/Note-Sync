@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
