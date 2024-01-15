@@ -53,6 +53,7 @@ public class CreateAccount extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         Utils.showToast(CreateAccount.this, "Account created successfully");
                         firebaseAuth.signOut();
+                        startActivity(new Intent(CreateAccount.this, LoginActivity.class));
                         finish();
                     } else {
                         Utils.showToast(CreateAccount.this, Objects.requireNonNull(task.getException()).getLocalizedMessage() );
@@ -66,11 +67,6 @@ public class CreateAccount extends AppCompatActivity {
         if (b) {
             progressBar.setVisibility(ProgressBar.VISIBLE);
             createAccountButton.setVisibility(Button.GONE);
-            emailController.setEnabled(false);
-            passwordController.setEnabled(false);
-            confirmPasswordController.setEnabled(false);
-            createAccountButton.setEnabled(false);
-            loginButtonView.setEnabled(false);
         } else {
             createAccountButton.setVisibility(Button.VISIBLE);
             progressBar.setVisibility(ProgressBar.GONE);
